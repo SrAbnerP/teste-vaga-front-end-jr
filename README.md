@@ -50,6 +50,10 @@ Com o servidor proxy em execução, você pode iniciar o frontend da aplicação
 
 - Abra outro terminal no diretório raiz do projeto.
 
+```
+cd teste-vaga-front-end-jr
+```
+
 - Inicie o servidor de desenvolvimento com Vite:
 
 ```
