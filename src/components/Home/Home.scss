@@ -1,0 +1,58 @@
+$rosa: #f71963;
+$line: #dedede;
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.title-home {
+  text-align: center;
+
+  h2 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 700;
+    color: $rosa;
+  }
+
+  h3 {
+    font-size: 15px;
+    line-height: 22.5px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 60px;
+  }
+}
+
+.title-margin {
+  margin-top: 50px;
+  margin-bottom: 65px;
+}
+
+.title-line {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 8px;
+  margin-left: 50px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    width: 13em;
+    height: 1px;
+    background-color: $line;
+    left: -14em;
+  }
+
+  &::after {
+    left: initial;
+    right: -14em;
+  }
+}

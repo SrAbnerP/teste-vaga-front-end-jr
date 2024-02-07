@@ -1,0 +1,75 @@
+$rosa: #f71963;
+
+.product-card {
+  width: 270px;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.22);
+  margin-top: 5px;
+}
+
+.card-image {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.card-infos {
+  padding: 20px;
+}
+
+.card-name {
+  font-size: 15px;
+  line-height: 22.5px;
+  font-weight: 300;
+}
+
+.card-old-price {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #808080;
+}
+
+.card-price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: black;
+}
+
+.card-parc {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: black;
+}
+
+.card-frete {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $rosa;
+}
+
+.button-buy {
+  margin: 0 12px 12px 12px;
+  padding: 10px;
+  border: none;
+  width: 245px;
+  height: 44px;
+  border-radius: 4px;
+  background-color: $rosa;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
