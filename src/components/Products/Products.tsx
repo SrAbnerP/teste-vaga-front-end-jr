@@ -20,13 +20,13 @@ function Products(props: ProductsProps) {
 
   const nextSlide = () => {
     if (startIndex < products.length - 4) {
-      setStartIndex(startIndex + 1);
+      setStartIndex(startIndex + 2);
     }
   };
 
   const prevSlide = () => {
     if (startIndex > 0) {
-      setStartIndex(startIndex - 1);
+      setStartIndex(startIndex - 2);
     }
   };
 
@@ -75,10 +75,7 @@ function Products(props: ProductsProps) {
           <div
             className="carousel-inner"
             style={{
-              transform: `translateX(-${
-                startIndex * (100 / products.length)
-              }%)`,
-              width: `${100 * products.length}%`,
+              transform: `translateX(-${startIndex * (100 / 3.5)}%)`,
             }}
           >
             {products.map((product, index) => (
