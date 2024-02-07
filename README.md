@@ -1,30 +1,67 @@
-# React + TypeScript + Vite
+# Projeto React com TypeScript e Sass
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto React desenvolvido com TypeScript e estilizado com Sass. O projeto utiliza uma API externa para obter dados de produtos. Devido a restrições de CORS (Cross-Origin Resource Sharing) na API fornecida, é necessário executar um servidor proxy para contornar esse bloqueio.
 
-Currently, two official plugins are available:
+## Instruções de Instalação
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixá-lo em [nodejs.org](https://nodejs.org/en).
 
-## Expanding the ESLint configuration
+- Clone este repositório para o seu ambiente local:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+git clone https://github.com/SrAbnerP/teste-vaga-front-end-jr.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Navegue até o diretório do projeto:
+
+```
+cd teste-vaga-front-end-jr
+```
+
+- Instale as dependências necessárias:
+
+```
+  npm install
+```
+
+## Executando o Servidor Proxy
+
+Devido às restrições de CORS, é necessário executar um servidor proxy para contornar esse bloqueio e permitir a comunicação com a API fornecida.
+
+- Navegue até o diretório 'src/api':
+
+```
+cd src/api
+```
+
+- Execute o servidor proxy usando o Node.js:
+
+```
+node proxy.js
+```
+
+O servidor proxy estará em execução e pronto para redirecionar as requisições para a API.
+
+## Executando o Frontend
+
+Com o servidor proxy em execução, você pode iniciar o frontend da aplicação.
+
+- Volte para o diretório raiz do projeto, se ainda não estiver lá:
+
+```
+cd ../..
+```
+
+- Inicie o servidor de desenvolvimento com Vite:
+
+```
+npm run dev
+```
+
+A aplicação estará acessível em seu navegador no endereço http://localhost:5173.
+
+## Considerações
+
+- Certifique-se de que o servidor proxy esteja em execução sempre que você estiver desenvolvendo ou testando a aplicação para garantir o funcionamento correto das requisições à API.
+
+-Este servidor proxy é uma solução temporária para contornar as restrições de CORS na API fornecida.
