@@ -68,4 +68,4 @@ A aplicação estará acessível em seu navegador no endereço http://localhost:
 
 - Certifique-se de que o servidor proxy esteja em execução sempre que você estiver desenvolvendo ou testando a aplicação para garantir o funcionamento correto das requisições à API.
 
--Este servidor proxy é uma solução temporária para contornar as restrições de CORS na API fornecida.
+- Este servidor proxy é uma solução temporária para contornar as restrições de CORS na API fornecida.
